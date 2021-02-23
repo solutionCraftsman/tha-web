@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    background-image: url("../img/base-apparel/bg-pattern-desktop.svg");
+    font-family: "Josefin Sans", serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+.left {
+    width: 60%;
+    padding: 100px 250px;
+}
+
+.right {
+    width: 40%;
+}
+
+.info {
+    margin-top: 200px;
+    letter-spacing: 10px;
+    font-size: 70px;
+}
+
+.info p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.info + p {
+    font-weight: lighter;
+}
+
+input, button {
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+input[type="email"] {
+    border: 1px solid grey;
+    width: 300px;
+    height: 30px;
+}
+
+button {
+    border: 1px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    height: 60px;
+    margin: -50px;
+    width: 100px;
+}
+
+.light {
+    color: hsl(0, 36%, 70%);
+}
+
+aside img {
+    height: 1000px;
+}
+
+.submit-email {
+    margin: 50px 0;
+}
