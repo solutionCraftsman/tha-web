@@ -1,6 +1,6 @@
 
 body {
-    width: 75543%;
+    width: 65%;
     margin-top: 35px;
     margin-right: auto;
     margin-left: auto;
@@ -45,7 +45,7 @@ nav {
 
 .nav-right li {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 a {
@@ -70,8 +70,8 @@ header {
 
 
 .header-left {
-    width: 50%;
-    display: inline-block;
+    /*width: 50%;*/
+    /*display: inline-block;*/
     /*position: absolute;
     top: 0;*/
 }
@@ -127,11 +127,11 @@ button {
 }
 
 .about-me .content .left {
-    width: 50%;
+    /*width: 50%;*/
+    margin-right: 50px;
 }
 
 .about-me .content .right {
     height: 35%;
     width: 35%;
 }
-
