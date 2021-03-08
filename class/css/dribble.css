@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     width: 100%;
@@ -79,8 +83,7 @@ a:link, a:visited {
 }
 
 .center {
-    /*display: flex;
-    flex-direction: column;*/
+
 }
 
 .center > div {
@@ -98,15 +101,11 @@ a:link, a:visited {
     color: #fff;
     font-size: 0.8em;
     font-weight: bold;
+    padding: 1rem 5.6rem;
 }
 
 .row-height {
     height: 50px;
-}
-
-.text-center {
-    text-align: center;
-    line-height: 4;
 }
 
 .round-border {
@@ -116,6 +115,7 @@ a:link, a:visited {
 
 .social-sign-up .small {
     width: 12%;
+    padding: 1rem;
 }
 
 .bg-grey {
@@ -155,9 +155,9 @@ form label:not(#terms-label) {
 }
 
 form input, form button {
-    border: 1px;
     border-radius: 10px;
     margin-top: 5px;
+    padding: 1em;
 }
 
 form .row-height {
@@ -169,6 +169,7 @@ form button {
     color: #fff;
     font-size: 0.8em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .text-grey {
@@ -185,6 +186,6 @@ form button {
 }
 
 .social-icon {
-    width: 40%;
-    height: 40%;
+    width: 100%;
+    height: 100%;
 }

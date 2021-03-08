@@ -1,11 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.container {
     width: 65%;
     margin-top: 35px;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5em;
 }
 
 .pink-text {
@@ -14,10 +20,6 @@ body {
 
 .pink-bg {
     background-color: #ff5678;
-}
-
-.white-text {
-    color: #fff;
 }
 
 .big {
@@ -38,22 +40,33 @@ nav {
 .nav-right {
     padding: 0;
     margin: 0;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
     /*position: absolute;
     top: 6px;
     right: 0;*/
 }
 
 .nav-right li {
-    display: inline-block;
-    margin-left: 50px;
+    list-style-type: none;
+    /*margin: 0;*/
+    /*flex: 1;*/
+    /*margin-left: 50px;*/
+}
+
+.nav-right:last-child a {
+    padding: 0.6em 1.7em;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 4px;
 }
 
 a {
     text-decoration: none;
-}
-
-a:visited {
-    color: black;
+    color: #000;
 }
 
 header {
@@ -62,12 +75,6 @@ header {
     justify-content: space-between;
     /*position: relative;*/
 }
-
-.nav-right button {
-    height: 3rem;
-    width: 9rem;
-}
-
 
 .header-left {
     /*width: 50%;*/
@@ -85,30 +92,25 @@ header {
     right: 0;*/
 }
 
-.header-bottom {
+.header-left .bottom {
     display: flex;
     align-items: center;
 }
 
-.header-bottom a {
+/*.header-left .bottom:first-child {*/
+.btn-big {
+    width: 7rem;
+    padding: 1.1rem 4.5rem;
+}
+
+.header-left .bottom a {
     margin-right: 2.5rem;
 }
 
-.header-bottom a img {
+.header-left .bottom a img {
     margin-top: 10px;
     width: 40px;
     height: 40px;
-}
-
-.header-bottom a button {
-    height: 5rem;
-    width: 15rem;
-}
-
-button {
-    border: 1px;
-    border-radius: 5px;
-    font-size: inherit;
 }
 
 .about-me {
@@ -134,4 +136,180 @@ button {
 .about-me .content .right {
     height: 35%;
     width: 35%;
+}
+
+.work-experience {
+    margin-top: 200px;
+    line-height: 0.3;
+}
+
+.work-experience .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-experience .top a {
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+.work-experience hr {
+    margin: 0;
+}
+
+.work-experience .items {
+    font-size: 1.2rem;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10rem;
+}
+
+.text-grey {
+    color: #555;
+}
+
+.text-grey-lighter {
+    /*color: #999;*/
+    color: #888;
+}
+
+.organization {
+    font-weight: 500;
+}
+
+.item .light {
+    font-weight: 300;
+}
+
+.skill-set {
+    margin-top: 10rem;
+}
+
+.skill-set .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 7rem;
+    margin: 50px 20px;
+}
+
+.skill-set .items .item {
+    padding: 40px 25px 30px 25px;
+    box-shadow: 0 0 30px #eee;
+}
+
+.skill-set .items .item .skill {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.skill-set .items .item p {
+    font-size: 1.1rem;
+}
+
+.selected-works {
+    margin-top: 250px;
+}
+
+.selected-works .title {
+    margin-bottom: 40px;
+}
+
+.selected-works .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 45px;
+}
+
+.selected-works .items * {
+    width: 100%;
+}
+
+/*.selected-works .items:first-child {*/
+.selected-works .items #first {
+    grid-column: 1 / span 2;
+}
+
+.the-skillset {
+    margin-top: 120px;
+}
+
+.the-skillset h2 {
+    margin-bottom: 0;
+}
+
+.the-skillset .items p {
+    margin: 0;
+    width: 60%;
+}
+
+.the-skillset .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.penultimate {
+    margin-top: 300px;
+}
+
+.penultimate .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.penultimate .items .left {
+    width: 44%;
+    font-size: 1.35rem;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+.penultimate .items .left h1 {
+    margin: 0;
+}
+
+.penultimate .items .left p {
+    margin-bottom: 50px;
+}
+
+.penultimate .items .right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.penultimate .items .right h2 {
+    margin: 0;
+}
+
+.penultimate .items .right a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.penultimate .items .right img:not(#linkedin-icon) {
+    margin-right: 20px;
+}
+
+.penultimate .items .right #linkedin-icon {
+    margin-right: 25px;
+}
+
+footer {
+    margin-top: 150px;
+    color: white;
+    height: 100px;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+#arrow {
+    font-size: 2em;
 }
