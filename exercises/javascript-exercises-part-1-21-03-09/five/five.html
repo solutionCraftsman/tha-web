@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question Five</title>
+    <script type="text/javascript" src="five.js"></script>
+</head>
+<body>
+    <h1>Question 5</h1>
+    <p>5 - Write a function addWithSubcharge that adds two amounts with subcharge.
+        For each amount less than or equal to 10, the subcharge is 1.
+        For each amount greater than 10, the subcharge is 2.</p>
+
+    <form>
+        <label for="firstAmount">First Amount: </label>
+        <input type="number" id="firstAmount">
+
+        <label for="secondAmount">Second Amount: </label>
+        <input type="number" id="secondAmount">
+
+        <button type="submit"
+                onclick = "alert(
+                    addWithSubCharge(
+                        Number(document.getElementById('firstAmount').value),
+                        Number(document.getElementById('secondAmount').value))
+                )">
+            Get Amount with Sub-charge
+        </button>
+    </form>
+
+</body>
+</html>

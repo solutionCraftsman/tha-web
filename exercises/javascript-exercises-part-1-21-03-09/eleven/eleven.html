@@ -2,14 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Question Eleven</title>
+    <title>Question 11</title>
     <script type="text/javascript" src="eleven.js"></script>
 </head>
 <body>
     <h1>Question 11</h1>
-    <script type="text/javascript">
+    <p>11 A Sandwich Calculator</p>
+    <p>1. Write a function called sandwich calculator. This should accept one value: slicesOfBread</p>
+    <p>2. The function should return the total number of possible sandwiches based on the amount of slices available,
+        so if there are 10 slices, it should return 5. Test your function with an alert box.</p>
+    <p>3. Extend your function so it accepts two values, slicesOfBread and slicesOfCheese.</p>
+    <p>4. It takes two slices of bread and one of cheese to make a sandwich. The function should return
+        the total number of possible sandwiches, so if there are 10 slices of bread, but only 1 of cheese,
+        it should return 1. You'll need an if statement to make this work.</p>
+
+    <form>
+        <label for="slicesOfBread">Slices of Bread: </label>
+        <input type="number" id="slicesOfBread">
+
+        <label for="slicesOfCheese">Slices of Cheese: </label>
+        <input type="number" id="slicesOfCheese">
+
+        <button type="submit"
+                onclick = "alert(
+                    sandwichCalculator(
+                        Number(document.getElementById('slicesOfBread').value),
+                        Number(document.getElementById('slicesOfCheese').value)
+                    )
+                )">
+            Get Possible Sandwiches
+        </button>
+    </form>
+
+    <!--<script type="text/javascript">
         alert(sandwichCalculator(10))
         alert(sandwichCalculator(10, 1))
-    </script>
+    </script>-->
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 7</title>
+    <script type="text/javascript" src="seven.js"></script>
+</head>
+<body>
+    <h1>Question 7</h1>
+    <p>7 - Write a JavaScript program to compute the sum of the two given integers.
+        If the two values are same, then returns triple their sum.</p>
+
+    <form>
+        <label for="firstInteger">First Integer: </label>
+        <input type="number" id="firstInteger">
+
+        <label for="secondInteger">Second Integer: </label>
+        <input type="number" id="secondInteger">
+
+        <button type="submit"
+                onclick = "alert(
+                    computeSum(
+                        Number(document.getElementById('firstInteger').value),
+                        Number(document.getElementById('secondInteger').value))
+                )">
+            Compute Sum
+        </button>
+    </form>
+
+</body>
+</html>

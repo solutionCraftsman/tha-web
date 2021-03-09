@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4</title>
+    <script type="text/javascript" src="four.js"></script>
+</head>
+<body>
+    <h1>Question 4</h1>
+    <p>4 - Write a function toArray that takes 2 values and returns these
+        values in an array.</p>
+
+    <form>
+        <label for="firstValue">First Value: </label>
+        <input type="text" id="firstValue">
+
+        <label for="secondValue">Second Value: </label>
+        <input type="text" id="secondValue">
+
+        <button type="submit"
+                onclick = "alert(
+                    toArray(
+                        document.getElementById('firstValue').value,
+                        document.getElementById('secondValue').value
+                    )
+                )">
+            Get Array
+        </button>
+    </form>
+
+</body>
+</html>
