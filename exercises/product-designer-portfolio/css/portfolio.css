@@ -183,29 +183,29 @@ header {
     font-weight: 300;
 }
 
-.skill-set {
+.the-skill-set {
     margin-top: 10rem;
 }
 
-.skill-set .items {
+.the-skill-set .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 7rem;
     margin: 50px 20px;
 }
 
-.skill-set .items .item {
+.the-skill-set .items .item {
     padding: 40px 25px 30px 25px;
     box-shadow: 0 0 30px #eee;
+    width: 70%;
 }
 
-.skill-set .items .item .skill {
+.the-skill-set .items .item .skill {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 8px;
 }
 
-.skill-set .items .item p {
+.the-skill-set .items .item p {
     font-size: 1.1rem;
 }
 
@@ -233,27 +233,27 @@ header {
     grid-column: 1 / span 2;
 }
 
-.the-skillset {
+.the-skill-set-2 {
     margin-top: 120px;
 }
 
-.the-skillset h2 {
+.the-skill-set-2 h2 {
     margin-bottom: 0;
 }
 
-.the-skillset .items p {
+.the-skill-set-2 .items p {
     margin: 0;
     width: 60%;
 }
 
-.the-skillset .items {
+.the-skill-set-2 .items {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .penultimate {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .penultimate .items {
