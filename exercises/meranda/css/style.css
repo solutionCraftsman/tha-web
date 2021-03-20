@@ -1,0 +1,226 @@
+/*@import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Cabin:wght@400;500;600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
+
+html {
+    font-size: 1px;
+    font-family: 'Cabin', sans-serif;
+}
+
+body {
+    font-size: 16rem;
+}
+
+nav, header .slide {
+    width: 1150rem;
+}
+
+nav {
+    color: black;
+    margin: 30rem auto 15rem;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav .top > a {
+    font-size: 30rem;
+    font-weight: 500;
+}
+
+nav .top, nav .top .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .btn {
+    margin-left: 10rem;
+}
+
+nav .top .right a {
+    margin: 0 20rem;
+}
+
+nav .top {
+    margin-bottom: 30rem;
+}
+
+nav .bottom {
+    font-family: 'B612 Mono', monospace;
+    font-size: 14rem;
+}
+
+nav .bottom > div {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+    background-color: white;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+hr {
+    margin: 0;
+    border: 0.1rem solid #E4E5E7;
+    background-color: #E4E5E7;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
+nav .bottom a {
+    margin-right: 30rem;
+}
+
+input, button {
+    border: 0;
+}
+
+.input {
+    border-bottom: 1rem solid #E4E5E7;
+}
+
+.p-1 {
+    padding: 15rem;
+}
+
+.p-2 {
+    padding: 15rem 20rem;
+}
+
+.br-1 {
+    border-radius: 20rem;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+header {
+    padding-top: 80rem;
+}
+
+header .slide {
+    margin: 0 auto;
+    display: flex;
+}
+
+header .slide img {
+    width: 50%;
+}
+
+header .slide .right {
+    padding: 50rem;
+    background-color: #F8F9FA;
+}
+
+.post-details .bottom {
+    display: flex;
+}
+
+.grey-tx {
+    color: grey;
+}
+
+
+
+
+/* Carousel Container */
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+/* Hide the slides by default */
+.slide {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    padding: 16rem;
+    color: grey;
+    font-weight: bold;
+    font-size: 18rem;
+    /*transition: 0.6s ease;*/
+    transition: 1s ease-in;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
+}
+
+/* Different radius for next */
+.next {
+    border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* The dots/bullets/indicators */
+.indicator {
+    cursor: pointer;
+    height: 3.75rem;
+    width: 18rem;
+    margin: 100rem 5rem;
+    background-color: #8BC34A;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #CCCCCC;
+}
+
+.swipe-left {
+    -webkit-animation-name: swipe-left;
+    -webkit-animation-duration: 1s;
+    animation-name: swipe-left;
+    animation-duration: 1s;
+}
+
+.swipe-right {
+    -webkit-animation-name: swipe-right;
+    -webkit-animation-duration: 1s;
+    animation-name: swipe-right;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes swipe-left {
+    to {
+        transform: translateX(-2000rem);
+    }
+}
+
+@-webkit-keyframes swipe-right {
+    to {
+        transform: translateX(2000rem);
+    }
+}
+
+@keyframes swipe-left {
+    to {
+        transform: translateX(-2000rem);
+    }
+}
+
+@keyframes swipe-right {
+    to {
+        transform: translateX(2000rem);
+    }
+}
+

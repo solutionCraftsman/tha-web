@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meranda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+        <div class="top">
+            <a href="">Meranda</a>
+            <div class="right">
+                <a><i class="fab fa-facebook-f"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-instagram"></i></a>
+                <form class="form">
+                    <input type="text" placeholder="Search..." class="input p-1 br-1">
+                    <button type="submit" class="p-2 br-1 btn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom" id="fixed">
+            <div>
+                <a href="">HOME</a>
+                <a href="">CATEGORIES</a>
+                <a href="">POLITICS</a>
+                <a href="">BUSINESS</a>
+                <a href="">HEALTH</a>
+                <a href="">DESIGN</a>
+                <a href="">SPORT</a>
+                <a href="">CONTACT</a>
+            </div>
+            <hr>
+        </div>
+    </nav>
+
+    <main>
+        <header>
+            <div class="carousel">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <div class="slide swipe-left">
+                    <img src="img/big_img_1.jpg" class="left" />
+
+                    <div class="right">
+                        <p class="grey-tx">EDITOR'S PICK</p>
+                        <h2 class="title">News Needs to Meet Its Audiences Where They Are</h2>
+                        <p class="grey-tx">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ducimus mollitia nobis quasi quidem rem reprehenderit saepe sit ut. Expedita iure maxime omnis optio unde veniam voluptas! Adipisci eius eos ex expedita quae rem vitae voluptatum! Aliquid eligendi quaerat tempora.</p>
+
+                        <div class="post-details">
+                            <a class="author">Dave Rogers</a> <span class="grey-tx">in</span> <a class="post-category">Food</a>
+                            <div class="bottom grey-tx">
+                                <p class="time">Jun 14</p> . <p class="duration">3 min read</p> <span>*</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slide swipe-left">
+                    <img src="img/big_img_1.jpg" class="left" />
+
+                    <div class="right">
+                        <p class="grey-tx">EDITOR'S PICK 2</p>
+                        <h2 class="title">News Needs to Meet Its Audiences Where They Are</h2>
+                        <p class="grey-tx">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ducimus mollitia nobis quasi quidem rem reprehenderit saepe sit ut. Expedita iure maxime omnis optio unde veniam voluptas! Adipisci eius eos ex expedita quae rem vitae voluptatum! Aliquid eligendi quaerat tempora.</p>
+
+                        <div class="post-details">
+                            <a class="author">Dave Rogers</a> <span class="grey-tx">in</span> <a class="post-category">Food</a>
+                            <div class="bottom grey-tx">
+                                <p class="time">Jun 14</p> . <p class="duration">3 min read</p> <span>*</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+            </div>
+        </header>
+    </main>
+
+    <script rel="script" src="js/script.js"></script>
+</body>
+</html>
