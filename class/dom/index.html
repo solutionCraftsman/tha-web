@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box {
+            margin: 2em; padding: 0;
+            border: solid 1pt black;
+        }
+        .yellowish {
+            background-color: #EFE63F;
+        }
+        .blueish {
+            background-color: blue;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            ...
+        </div>
+        <div class="box blueish">
+            ...
+        </div>
+    </main>
+
+    <hr>
+
+    <section>
+        <div id="first">
+            <h1 onclick="this.innerHTML = 'Ooopsie!'">Issokay!</h1>
+<!--            <hr onclick="this.innerHTML = 'Ooopsie!'" />-->
+            <p>Issokay ooo!</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <p>Click the button to display the date</p>
+        <button onclick="displayDate()">The time is?</button>
+        <script>
+            function displayDate() {
+                document.getElementById("demo").innerHTML=Date();
+            }
+        </script>
+        <p id="demo"></p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>JavaScript addEventListener()</h2>
+        <p>This example uses the addEventListener() method to attach a click event to a button.</p>
+        <button id="myBtn">Try it</button>
+        <button id="myBtn2">Try again</button>
+
+        <script>
+            document.getElementById("myBtn").addEventListener("click", function (){
+                alert("Hello ooo")
+            })
+
+            document.getElementById("myBtn2").addEventListener("click", function (){
+                let input = prompt("Enter something ..")
+                alert("You entered " + input)
+            })
+        </script>
+    </section>
+</body>
+</html>

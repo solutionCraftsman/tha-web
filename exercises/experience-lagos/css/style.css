@@ -1,0 +1,152 @@
+
+html {
+    font-size: 1px;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 16rem;
+    margin: 0;
+}
+
+header {
+    background-color: #7CD2A4;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 20rem;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 90%);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 120px;
+}
+
+.hamburger {
+    background-color: white;
+    padding: 20rem;
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+}
+
+.hamburger div:first-of-type * {
+    margin: 5rem 0;
+}
+
+.hamburger div * {
+    width: 24rem;
+}
+
+.hamburger div:first-of-type *:hover, .hamburger div:first-of-type *:focus {
+    margin: 7rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.hamburger:active, .hamburger:focus, nav #nav-spread {
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    position: fixed; /* Stay in place */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(10000px);
+    animation-name: nav-spread-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+@keyframes nav-spread-in {
+    from {
+
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#nav-spread a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24rem;
+    color: #fff;
+    transition: 0.3s; /* Transition effects on hover (color) */
+    margin: 10rem;
+}
+
+header .lead {
+    font-size: 45rem;
+    font-weight: normal;
+    margin-top: 120rem;
+    margin-bottom: 0;
+    line-height: 2;
+}
+
+header .sub-lead {
+    margin-top: 0;
+    margin-bottom: 60rem;
+}
+
+header .btn {
+    font-size: 13rem;
+    text-decoration: none;
+    padding: 15rem 30rem;
+    border-radius: 50rem;
+}
+
+.bd-1 {
+    border: solid 1rem black;
+}
+
+.cl-1 {
+    color: #fff;
+}
+
+.cl-2 {
+    color: #000;
+}
+
+.bg-1 {
+    background-color: #fff;
+}
+
+.bg-2 {
+    background-color: #71D073;
+}
+
+.ls-1 {
+    letter-spacing: 10rem;
+}
+
+.ls-2 {
+    letter-spacing: 30rem;
+}
+
+
+
+
+@media(min-width: 721px) {
+    body {
+        padding: 30rem;
+    }
+}
