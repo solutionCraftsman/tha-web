@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="frontend" />
     <orderEntry type="module" module-name="_experience-lagos" />
+    <orderEntry type="module" module-name="backend" />
   </component>
 </module>
